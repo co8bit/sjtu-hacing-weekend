@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  <link rel="stylesheet" href="style/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body>
+
+    <form id="data_q" action="" method="post" >
+
+      <div id = "textinput">
+        <textarea id="question-in" class="form-control" name="question" rows="8" cols="40" placeholder = "Please enter your problem" ></textarea>
+      </div>
+
+      <div id = "toolbar" >
+          <input type = "file" name ="file" id = "file" style="display:none;" />
+          <button  name="camera" type="button" onclick="document.getElementById('file').click();" class="btn btn-default btn-lg"><span class = "glyphicon glyphicon-camera"></span></button>
+          <button  name = "add"   type="button" class="btn btn-default btn-lg " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span> </button>
+          <button  name = "voice" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-bullhorn"></span> </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Answer Limits</h4>
+            </div>
+            <div class="modal-body">
+        <!--choice -->
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input name="resp" value="camera" type="checkbox" autocomplete="off" checked> <span class = "glyphicon glyphicon-camera"></span>
+          </label>
+          <label class="btn btn-primary">
+            <input name="resp" value="check" type="checkbox" autocomplete="off"> <span class = "glyphicon glyphicon-ok"></span>
+          </label>
+          <label class="btn btn-primary">
+            <input name="resp" value="voice" type="checkbox" autocomplete="off"> <span class="glyphicon glyphicon-bullhorn"></span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" id="submit-question-form-btn" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+
+    <!-- </div>
+  </div>
+</div> -->
+    <script>
+      $(function(){
+        var submitQuestionForm = function() {
+          $('#data_q').submit();
+        };
+
+        $('#submit-question-form-btn').click(function(){
+          submitQuestionForm();
+        });
+      });
+    </script>
+
+  </body>
+
+
+
+
+</html>

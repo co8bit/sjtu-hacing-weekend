@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+#toolbar {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 20px;
+}
+#data_q {
+  height: 100%;
+}
+#nav {
+  position: relative;
+  left: -100px;
+  background: url(...) no-repeat center center;
+  background-color: #c8c8c8;
+}
+#textinput {
+  background: url(...) no-repeat center center;
+  background-color: #c8c8c8;
+  text-align: center;
+  height: 100%;
+  padding: 30px 0 0 0;
+}
+#textinput #question-in {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  border: 2px solid #a0a0a0;
+}
