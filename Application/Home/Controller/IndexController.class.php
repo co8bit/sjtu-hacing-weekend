@@ -14,13 +14,12 @@ class IndexController extends Controller {
     {
     	$data	=	null;
 
-    	$data[id]		=	$this->_param("ID");
-    	$data[title]	=	$this->_param("title");
-    	$data[type]	=	$this->_param("type");
-    	$data[content]	=	$this->_param("content");
-    	$data[time]	=	$this->_param("time");
-    	$data[uid]	=	$this->_param("uid");
+    	$data[title]	=	I("title");
+    	$data[type]	=	I("type");
+    	$data[content]	=	I("content");
+    	$data[time]	=	time();
+    	$data[uid]	=	I("uid");
     	
-    	$D("Problem")->add($data);
+    	D("Problem")->add($data);
     }
 }

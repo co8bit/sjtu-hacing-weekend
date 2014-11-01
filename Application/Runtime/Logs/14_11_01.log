@@ -89,3 +89,81 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
 
+[ 2014-11-01T16:52:51+08:00 ] ::1 /sjtu-hacing-weekend/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2014-11-01T16:53:25+08:00 ] ::1 /sjtu-hacing-weekend/index.php/index/ask
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 17 行.
+ERR: Think\Controller:_param方法不存在！
+
+[ 2014-11-01T16:56:00+08:00 ] ::1 /sjtu-hacing-weekend/index.php/index/ask
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: D D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 24 行.
+
+[ 2014-11-01T16:56:29+08:00 ] ::1 /sjtu-hacing-weekend/index.php/index/ask
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `zxd_problem` [ RunTime:0.004164s ]
+SQL: INSERT INTO `zxd_problem` (`title`,`type`,`content`,`time`,`uid`) VALUES ('',0,'',0,0) [ RunTime:0.074496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2014-11-01T16:57:50+08:00 ] ::1 /sjtu-hacing-weekend/index.php/index/ask?title=asd&type=0&content=zxc&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 18 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp2\www\sjtu-hacing-weekend\Application\Home\Controller\IndexController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `zxd_problem` [ RunTime:0.002553s ]
+SQL: INSERT INTO `zxd_problem` (`title`,`type`,`content`,`time`,`uid`) VALUES ('asd',0,'zxc',1414832270,1) [ RunTime:0.033776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
